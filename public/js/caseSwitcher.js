@@ -28,7 +28,7 @@ function sarcastic(e){
         let txt = p.innerText;
         txt = txt.toLowerCase();
         let ul = false;
-        txt = txt.split('').map(letter => letter.match(/[a-zA-Z]/) != null ? (ul = ! ul, ul ? letter.toUpperCase() : letter.toLowerCase()) : letter).join('');
+        txt = txt.split('').map(letter => letter.match(/[a-zA-Z]/) != null ? (ul = ! ul, ul ? letter.toLowerCase() : letter.toUpperCase()) : letter).join('');
         p.innerText = txt;
     }
 }
